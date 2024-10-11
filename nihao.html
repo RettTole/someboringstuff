@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Bernard MT Condensed';
+        }
+        .stuff{
+            margin-left: 0px;
+            top: 0;
+            transition: margin-left 0.3s;
+        }
+        #closebtn {
+            margin-left: 125px;
+            cursor: pointer;
+            font-size: 25px;
+            position: absolute;
+            top: 0;
+        }
+        .sidenav{
+            width: 0;
+            position:fixed;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            overflow-x: hidden;
+            background-color: rgb(0, 0, 0);
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+        .sidenav a{
+            text-decoration: none;
+            display: block;
+            font-size: 20px;
+            color: rgb(116, 114, 114);
+            padding: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .sidenav a:hover, .offcanvas a:focus {
+            color: rgb(187, 187, 187);
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="sidenav" id="mysidenav">
+        <a href="javascript:void(0)" onclick="closeNav()" id="closebtn">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+    </div>
+    <div class="stuff" id="mystuff">
+        <a><span style="font-size: 30px;cursor: pointer;" onclick="openNav()">&#9776;</span></a>
+    </div>
+    <script>
+        function closeNav() {
+            document.getElementById("mysidenav").style.width="0px"
+            document.getElementById("mystuff").style.marginLeft="0px"
+        }
+        function openNav() {
+            document.getElementById("mysidenav").style.width="160px"
+            document.getElementById("mystuff").style.marginLeft="160px"
+        }
+    </script>
+</body>
+</html>
