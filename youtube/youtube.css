@@ -1,0 +1,67 @@
+p{
+    font-family: Roboto, Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.youtube-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 15px;
+}
+.thumbnail{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+} 
+.profile-pic{
+    width: 35px;
+    margin-right: 4px;
+}
+.picpic{
+    width: 100%;
+    border-radius: 50px;
+}
+.title{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+.youtube-pic{
+    margin-bottom: 12px;
+}
+.author,
+.number{
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(107, 106, 106);
+}
+.author{
+    margin-bottom: 1px;
+}
+.youtube-info{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.right-section{
+    position: relative;
+}
+.realnotifactions{
+    position: relative;
+}
+.notification{
+    position: absolute;
+    color: white;
+    font-family: Roboto,Arial;
+    background-color: rgb(218, 27, 27);
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    top: 8px;
+    right: 65px;
+}
+
